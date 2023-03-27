@@ -1,0 +1,4 @@
+# CirculateAPP
+- Vite
+- React
+- Prisma
