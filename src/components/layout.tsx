@@ -4,9 +4,9 @@ import Footer from '~/components/footer/footer'
 export default function Layout({children}) {
   return (
     <>
-      <div className='relative'>
+      <div className='relative flex flex-col'>
         <Navbar />
-          <main>{children}</main>
+        <main>{children}</main>
         <Footer />
       </div>
     </>

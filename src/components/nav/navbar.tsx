@@ -40,10 +40,9 @@ const Navbar = ({...pageProps}) => {
 
     return (
         <>
-<nav className='grid w-full relative sticky top-0 z-10'>
+<nav className='relative sticky top-0 z-10 w-full'>
             <div className="bg-green-500 flex flex-row w-full px-10 justify-between relative z-20" style={{height: '60px', position: 'relative'}}>
                 <Image src="images/brand/circulize_logo.svg" className="invert hover:animate-pulse cursor-pointer" alt="Circulize Logo" width='150' height='250' />
-                <p>{isMobile}</p>
                 {!isMobile && <div ref={bigNav} className="gap-4 text-white flex max-md:invisible">
                     <Link href="/" className={buttonRow}>Home</Link>
                     <Link href="/about" className={buttonRow}>About</Link>
