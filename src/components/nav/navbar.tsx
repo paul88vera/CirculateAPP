@@ -65,10 +65,10 @@ const Navbar = ({...pageProps}) => {
                 <div ref={smallNav} className={`flex flex-col text-xl w-full text-white gap-1 absolute bg-green-500 py-2 px-10 transition-transform transition-opacity ease-in-out duration-700 ${isNav && isMobile ? 'translate-y-0' : '-translate-y-72'}`}>
                     <SignedOut><Link href="/" className={buttonCol}>Sign In</Link></SignedOut>
                     <Link href="/" className={buttonCol}>Home</Link>
-                    <Link href="/" className={buttonCol}>About</Link>
-                    <Link href="/" className={buttonCol}>Find</Link>
-                    <Link href="/" className={buttonCol}>Contact</Link>
-                    <SignedIn><Link href="/" className={buttonCol}>Profile</Link></SignedIn>
+                    <Link href="/about" className={buttonCol}>About</Link>
+                    <Link href="/find" className={buttonCol}>Find</Link>
+                    <Link href="/contact" className={buttonCol}>Contact</Link>
+                    <SignedIn><Link href="/profile" className={buttonCol}>Profile</Link></SignedIn>
                 </div>
             </div>
 </nav>
