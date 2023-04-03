@@ -13,7 +13,7 @@ const Home: NextPage = ({...pageProps}) => {
         <meta name="description" content="home page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="bg-zinc-900 flex flex-col">
+      <section className="bg-zinc-900 flex flex-col h-full relative">
         <HeroSection {...pageProps} />
         <ThreeColumnSection {...pageProps} />
       </section>
