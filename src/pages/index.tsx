@@ -8,7 +8,7 @@ const Home: NextPage = ({ ...pageProps }) => {
   return (
     <>
       <Head>
-        <title>Home Page</title>
+        <title>Circulate</title>
         <meta name="description" content="home page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

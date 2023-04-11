@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { Bars4Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
@@ -45,13 +45,16 @@ const Navbar = ({ ...pageProps }) => {
           className="relative z-20 flex w-full flex-row justify-between bg-green-900 px-10"
           style={{ height: "60px", position: "relative" }}
         >
-          <Image
+          {/* <Image
             src="images/brand/circulize_logo.svg"
-            title="Circulize © 2023"
-            alt="Circulize Logo"
+            title="Circulate © 2023"
+            alt="Circulate Logo"
             width="150"
             height="250"
-          />
+          /> */}
+          <h1 className="text-4xl font-bold text-white md:text-5xl">
+            Circulate
+          </h1>
           {!isMobile && (
             <div
               ref={bigNav}
