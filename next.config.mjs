@@ -20,10 +20,5 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  pwa: {
-    dest: "public",
-    register: true,
-    skipWaiting: true
-  }
 };
 export default config;
