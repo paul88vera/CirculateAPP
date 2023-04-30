@@ -1,0 +1,42 @@
+/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
+const HeroSection = () => {
+  return (
+    <>
+      <section
+        className="relative grid h-96 w-full place-content-center px-10 py-16"
+        style={{
+          backgroundImage: `url('images/assets/burger.png')`,
+          backgroundPosition: "40% 100% fixed",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          boxShadow: "inset 0 0 300px rgba(0,0,0,1)",
+        }}
+      >
+        <div className="w-3/5 text-white">
+          <p className="text-3xl font-bold md:text-6xl">
+            CHOOSE THE BEST FOODS
+          </p>
+          <div className="no-wrap ... mt-2 mb-8 flex max-h-36 overflow-hidden overflow-ellipsis text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            incidunt nulla id iure doloremque quas minus sequi quo, qui unde,
+            accusamus iste maxime rerum sed laborum, autem labore voluptas
+            architecto.
+          </div>
+
+          <Link href="https://pumped-seal-85.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A3000%2Ffind">
+            <div className="no-wrap flex w-40 transform-gpu animate-bounce whitespace-nowrap rounded-lg bg-green-500 py-2 px-4 font-bold uppercase duration-500 ease-in-out hover:scale-110 hover:rounded-xl hover:drop-shadow-lg">
+              Get Started{" "}
+              <div className="my-auto ml-2 h-4 w-4">
+                <ArrowRightIcon />
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default HeroSection;
