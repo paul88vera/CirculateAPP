@@ -1,24 +1,24 @@
 import { useUser } from "@clerk/nextjs";
 import SuggestionCard from "./suggestionCard";
-// import Landing from "./landing";
 import { api } from "~/utils/api";
+import Landing from "./landing";
 
 const TripleColumns = () => {
   const { data } = api.restaurants.getAll.useQuery();
 
   const { user, isLoaded, isSignedIn } = useUser();
   if (!isLoaded || !isSignedIn) {
-    return;
+    return <Landing />;
   }
 
   return (
     <>
       <section className="max-w-screen relative flex flex-col bg-green-900 px-10 pb-16">
         <div className="pt-8 text-center text-3xl uppercase tracking-widest text-white md:text-4xl lg:text-5xl xl:text-6xl">
-          Welcome back {user.firstName}!
+          Welcome!
         </div>
-        <div className="tracking-tightest whitespace-nowrap pb-8 text-center text-3xl font-bold uppercase text-white md:text-4xl md:tracking-wide lg:text-5xl xl:text-6xl">
-          Nearby <span className="animate-pulse">❤️</span>
+        <div className="tracking-tightest whitespace-nowrap pb-8 text-center text-2xl font-bold uppercase text-white md:text-4xl md:tracking-wide lg:text-5xl xl:text-6xl">
+          Food Near Your Location
         </div>
         <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           {data?.map((r) => (

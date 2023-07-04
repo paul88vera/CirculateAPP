@@ -1,3 +1,5 @@
+/*eslint-disable*/
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,7 +9,11 @@ export default function Modal({ website, tel, map, imgAlt, description }) {
     <div className="px-10">
       {description}
       <div className="flex-3 flex justify-center gap-20 justify-self-auto rounded bg-transparent py-10 text-center md:flex-row md:gap-20">
-        <Link href={`tel:${tel}`} target="_blank">
+        <Link
+          href={`tel:${tel}`}
+          target="_blank"
+          className="hover:text-green-400"
+        >
           <Image
             src="/images/assets/actions-device-mobile.svg"
             alt={imgAlt}
@@ -16,7 +22,7 @@ export default function Modal({ website, tel, map, imgAlt, description }) {
           />
           mobile
         </Link>
-        <Link href={map} target="_blank">
+        <Link href={map} target="_blank" className="hover:text-green-400">
           <Image
             src="/images/assets/actions-map.svg"
             alt={imgAlt}
@@ -26,7 +32,7 @@ export default function Modal({ website, tel, map, imgAlt, description }) {
           />
           map
         </Link>
-        <Link href={website} target="_blank">
+        <Link href={website} target="_blank" className="hover:text-green-400">
           <Image
             src="/images/assets/actions-device-desktop.svg"
             alt={imgAlt}
