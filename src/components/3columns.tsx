@@ -1,6 +1,6 @@
 import { useUser } from "@clerk/nextjs";
 import SuggestionCard from "./suggestionCard";
-import Landing from "./landing";
+// import Landing from "./landing";
 import { api } from "~/utils/api";
 
 const TripleColumns = () => {
@@ -8,7 +8,7 @@ const TripleColumns = () => {
 
   const { user, isLoaded, isSignedIn } = useUser();
   if (!isLoaded || !isSignedIn) {
-    return <Landing />;
+    return;
   }
 
   return (
@@ -38,7 +38,6 @@ const TripleColumns = () => {
           ))}
         </div>
       </section>
-      <Landing />
     </>
   );
 };

@@ -26,7 +26,7 @@ const Navbar = ({ ...pageProps }) => {
     "bg-zinc-300 text-center py-2 text-green-900 hover:text-zinc-900 hover:animate-pulse my-1 rounded-xl";
 
   useEffect(() => {
-    //onlyly add event listener when the nav menu is open
+    //only add event listener when the nav menu is open
     if (!isNav) return;
     function handleClick(event: Event) {
       if (burger.current && !burger.current.contains(event.target)) {
