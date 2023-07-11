@@ -21,7 +21,7 @@ const Navbar = ({ ...pageProps }) => {
   }, []);
 
   const buttonRow =
-    "pt-5 font-bold uppercase ease-in duration-200 px-2 border-b-4 border-solid border-green-500 text-white hover:border-white hover:text-white hover:animate-pulse";
+    "pt-4 pb-2 font-bold uppercase ease-in duration-200 px-2 hover:border-b-4 border-b-4 border-green-900 hover:border-solid text-white hover:border-white hover:text-white hover:animate-pulse";
   const buttonCol =
     "bg-zinc-300 text-center py-2 text-green-900 hover:text-zinc-900 hover:animate-pulse my-1 rounded-xl";
 
@@ -41,18 +41,8 @@ const Navbar = ({ ...pageProps }) => {
   return (
     <>
       <nav className="relative sticky top-0 z-10 w-full">
-        <div
-          className="relative z-20 flex w-full flex-row justify-between bg-green-900 px-10"
-          style={{ height: "60px", position: "relative" }}
-        >
-          {/* <Image
-            src="images/brand/circulize_logo.svg"
-            title="Circulate © 2023"
-            alt="Circulate Logo"
-            width="150"
-            height="250"
-          /> */}
-          <h1 className="text-4xl font-bold text-white md:text-5xl">
+        <div className="relative z-20 flex w-full flex-row justify-between bg-green-900 px-10 py-6">
+          <h1 className="text-3xl font-bold text-white md:text-4xl">
             Circulate
           </h1>
           {!isMobile && (
