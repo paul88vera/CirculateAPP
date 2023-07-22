@@ -1,9 +1,9 @@
 import { useUser } from "@clerk/nextjs";
-import Searched from "~/components/searched";
-import { api } from "~/utils/api";
+// import Searched from "~/components/searched";
+// import { api } from "~/utils/api";
 
 export default function Find() {
-  const { data } = api.restaurants.getAll.useQuery();
+  // const { data } = api.restaurants.getAll.useQuery();
 
   const { isLoaded, isSignedIn } = useUser();
   if (!isLoaded || !isSignedIn) {
@@ -21,16 +21,18 @@ export default function Find() {
           placeholder="Search for your city"
           className="max-h-50 rounded border-0 py-1 px-2 text-black outline-0"
         />
+        {/* TODO: need to add button that fetches city queries. */}
       </form>
-      {data?.map((r) => (
+      {/* {data?.map((r) => (
         <Searched
           key={r.id}
+          // image={r.image}
           title={r.name}
           type={r.type}
           city={r.address.city}
           rating={r.rating}
         />
-      ))}
+      ))} */}
       ;
     </div>
   );
