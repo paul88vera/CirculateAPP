@@ -5,8 +5,11 @@ import React from "react";
 export default function Searched(props: any) {
   return (
     <div className="justify-content-center rounded bg-white py-4 text-center">
-      <div className="rounded bg-zinc-200">{props.type}</div>
+      <div className="rounded bg-zinc-200">{props.title}</div>
       <div className="rounded bg-zinc-200">{props.image}</div>
+      <div className="rounded bg-zinc-200">{props.type}</div>
+      <div className="rounded bg-zinc-200">{props.address}</div>
+      <div className="rounded bg-zinc-200">{props.city}</div>
     </div>
   );
 }
