@@ -25,7 +25,7 @@ const SuggestionCard = (props: SuggestionProps) => {
     <div onClick={handleClick}>
       <div
         title={props.title}
-        className="relative flex transform transform-gpu flex-col justify-between rounded-xl bg-white shadow-lg transition duration-300 ease-in-out hover:scale-105 hover:bg-zinc-200"
+        className="relative flex transform flex-col justify-between rounded-xl bg-white shadow-lg transition duration-300 ease-in-out hover:scale-105 hover:bg-zinc-200"
       >
         <div className="flex h-72 flex-row px-6 py-4 max-sm:flex-wrap sm:h-40 md:h-48">
           <div className="my-auto h-32 w-full overflow-hidden md:h-full md:w-1/2">
