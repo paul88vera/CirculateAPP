@@ -7,8 +7,8 @@ const HeroSection = () => {
       <section
         className="relative grid h-96 w-full place-content-center px-10 py-16"
         style={{
-          backgroundImage: `url('images/assets/burger.png')`,
-          backgroundPosition: "40% 100% fixed",
+          backgroundImage: "url('/images/assets/burger.png')",
+          backgroundPosition: "80% 100% fixed",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           boxShadow: "inset 0 0 300px rgba(0,0,0,1)",
@@ -27,7 +27,7 @@ const HeroSection = () => {
             <div className="no-wrap flex w-40 transform-gpu animate-bounce whitespace-nowrap rounded-lg bg-green-500 py-2 px-4 font-bold uppercase duration-500 ease-in-out hover:scale-110 hover:rounded-xl hover:bg-zinc-900 hover:drop-shadow-lg">
               Get Started{" "}
               <div className="my-auto ml-2 h-4 w-4">
-                <ArrowRightIcon />
+                <ArrowRightIcon height={15} />
               </div>
             </div>
           </Link>

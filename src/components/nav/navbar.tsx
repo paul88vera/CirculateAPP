@@ -40,7 +40,7 @@ const Navbar = ({ ...pageProps }) => {
 
   return (
     <>
-      <nav className="relative sticky top-0 z-10 w-full">
+      <nav className="sticky top-0 z-10 w-full">
         <div className="relative z-20 flex w-full flex-row justify-between bg-green-900 px-10 py-6">
           <h1 className="text-3xl font-bold text-white md:text-4xl">
             Circulate
@@ -53,9 +53,9 @@ const Navbar = ({ ...pageProps }) => {
               <Link href="/" title="HOME" className={buttonRow}>
                 Home
               </Link>
-              <Link href="/find" title="FIND" className={buttonRow}>
+              {/* <Link href="/find" title="FIND" className={buttonRow}>
                 Find
-              </Link>
+              </Link> */}
               <SignedIn>
                 <div className="my-auto rounded-full border-4 border-green-500 hover:animate-pulse hover:border-green-100">
                   <UserButton />
