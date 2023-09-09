@@ -19,6 +19,7 @@ const TripleColumns = () => {
     data?.filter((item) => {
       return item.type === type;
     });
+    console.log(type);
   };
 
   // Show Landing if not Logged In or Return Map() once Logged In
