@@ -1,8 +1,9 @@
 import { type NextPage } from "next";
 
 import Head from "next/head";
-// import HeroSection from "~/components/hero";
+import HeroSection from "~/components/hero";
 import ThreeColumnSection from "~/components/3columns";
+import { SignIn } from "@clerk/nextjs";
 
 const Home: NextPage = ({ ...pageProps }) => {
   return (
@@ -13,8 +14,11 @@ const Home: NextPage = ({ ...pageProps }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="relative flex h-full flex-col">
-        {/* <HeroSection {...pageProps} /> */}
-        <ThreeColumnSection {...pageProps} />
+        {!SignIn ? (
+          <HeroSection {...pageProps} />
+        ) : (
+          <ThreeColumnSection {...pageProps} />
+        )}
       </section>
     </>
   );

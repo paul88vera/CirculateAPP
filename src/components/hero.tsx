@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-// const burger = "./assets/burger-hero.jpg";
+// const burger = "./assets/burger.png";
 
 const HeroSection = () => {
   return (
     <>
       <section
-        className="relative grid h-96 w-full place-content-center px-10 py-16"
+        className="relative grid h-full w-full place-content-center px-10 py-16"
         style={{
-          backgroundImage: 'url("./assets/burger-hero.jpg")',
+          backgroundImage: "url(./assets/burger-hero.jpg)",
           backgroundPosition: "80% 100% fixed",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",

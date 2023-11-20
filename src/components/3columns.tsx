@@ -20,7 +20,7 @@ const TripleColumns = () => {
       <>
         <section className="max-w-screen relative flex flex-col px-10 pb-16 text-green-900">
           <div className="pt-8 text-center text-3xl uppercase tracking-widest md:text-4xl lg:text-5xl xl:text-6xl">
-            Welcome!
+            Welcome to our growing database of restaurants and cuisines!
           </div>
           <div className="tracking-tightest whitespace-nowrap pb-8 text-center text-2xl font-bold uppercase md:text-4xl md:tracking-wide lg:text-5xl xl:text-6xl">
             Find Food in San Antonio, Texas
