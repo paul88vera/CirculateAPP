@@ -1,9 +1,15 @@
 const Footer = () => {
   return (
     <>
-      <footer className="fixed bottom-0 w-full grow">
-        <div className="w-full bg-zinc-900 py-4 text-center text-white">
-          All rights reserved © Circulate 2023
+      <footer className="fixed bottom-0 flex w-full grow flex-col justify-evenly bg-zinc-900 align-middle sm:flex-row md:flex-row lg:flex-row">
+        <div className="py-4 text-center text-white">
+          All Rights Reserved © Circulate 2023
+        </div>
+        <div className="py-4 text-center text-white">
+          Developed by{" "}
+          <a href="https://paulvera.com" className="hover:text-green-400">
+            Paul Vera
+          </a>
         </div>
       </footer>
     </>
