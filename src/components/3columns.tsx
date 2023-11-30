@@ -18,13 +18,14 @@ const TripleColumns = () => {
   } else {
     return (
       <>
-        <section className="max-w-screen relative flex flex-col px-10 pb-16 text-green-900">
-          <div className="pt-8 text-center text-3xl uppercase tracking-widest md:text-4xl lg:text-5xl xl:text-6xl">
-            Welcome to our growing database of restaurants and cuisines!
+        <section className="max-w-screen relative flex flex-col px-4 pb-16 text-green-900 md:px-10">
+          <div className="pt-8 text-center text-xl uppercase tracking-widest md:text-2xl lg:text-3xl xl:text-4xl">
+            Welcome to our growing database of restaurants and cuisines in San
+            Antonio, Texas!
           </div>
-          <div className="tracking-tightest whitespace-nowrap pb-8 text-center text-2xl font-bold uppercase md:text-4xl md:tracking-wide lg:text-5xl xl:text-6xl">
+          {/* <div className="tracking-tightest whitespace-nowrap py-8 text-center text-lg font-bold uppercase md:text-2xl md:tracking-wide lg:text-3xl xl:text-4xl">
             Find Food in San Antonio, Texas
-          </div>
+          </div> */}
           {/* This is the filtering portion of the page */}
           <div className="flex justify-center gap-2 py-4 text-center">
             <label htmlFor="Filter">
@@ -39,7 +40,7 @@ const TripleColumns = () => {
             </label>
           </div>
           {/* mapping the data to cards for readability. Along with filtering by restaurant name and type of food capability */}
-          <div className="grid gap-6 pb-2 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-6 pt-8 pb-2 lg:grid-cols-2 xl:grid-cols-3">
             {data
               ?.filter((val) => {
                 if (filter == "") {

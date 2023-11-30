@@ -7,7 +7,7 @@ export default function Modal({ website, tel, map, imgAlt, description }) {
   return (
     <div className="px-10">
       {description}
-      <div className="flex-3 flex justify-center gap-20 justify-self-auto rounded bg-transparent py-10 text-center md:flex-row md:gap-20">
+      <div className="flex-3 flex justify-around gap-20 justify-self-auto rounded bg-transparent py-10 text-center md:flex-row md:gap-20">
         <Link
           href={`tel:${tel}`}
           target="_blank"

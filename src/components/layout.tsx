@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <>
       <div className="relative flex h-screen flex-col">
         <Navbar />
-        <main className="h-full pb-16">{children}</main>
+        <main>{children}</main>
         <Footer />
       </div>
     </>

@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-// const burger = "./assets/burger.png";
 
 const HeroSection = () => {
   return (
@@ -17,7 +16,7 @@ const HeroSection = () => {
         }}
       >
         <div className="w-3/5 text-white">
-          <p className="text-3xl font-bold md:text-6xl">
+          <p className="text-xl font-bold md:text-4xl">
             CHOOSE THE BEST FOODS
           </p>
           <div className="no-wrap ... mt-2 mb-8 flex max-h-36 overflow-hidden overflow-ellipsis text-base">
