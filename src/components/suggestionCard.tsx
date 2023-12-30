@@ -21,6 +21,9 @@ const SuggestionCard = (props: SuggestionProps) => {
   function handleClick() {
     setOpenModal((current) => !current);
   }
+
+  // const modalOpenedAppearance = "absolute flex flex-col justify-center z-40";
+
   return (
     <div onClick={handleClick}>
       <div

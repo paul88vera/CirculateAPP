@@ -11,34 +11,44 @@ export default function Modal({ website, tel, map, imgAlt, description }) {
         <Link
           href={`tel:${tel}`}
           target="_blank"
-          className="hover:text-green-400"
+          className="text-black transition-all ease-in-out hover:scale-110"
         >
           <Image
-            src="/images/assets/actions-device-mobile.svg"
+            src="/images/assets/phone-green.png"
             alt={imgAlt}
             width="50"
             height="50"
+            className="hover:animate-pulse" 
           />
-          mobile
+          Phone
         </Link>
-        <Link href={map} target="_blank" className="hover:text-green-400">
+        <Link
+          href={website}
+          target="_blank"
+          className="text-black transition-all ease-in-out hover:scale-110"
+        >
           <Image
-            src="/images/assets/actions-map.svg"
+            src="/images/assets/imac-green.png"
             alt={imgAlt}
             width="50"
             height="50"
             className="hover:animate-pulse"
           />
-          map
+          Website
         </Link>
-        <Link href={website} target="_blank" className="hover:text-green-400">
+        <Link
+          href={map}
+          target="_blank"
+          className="text-black transition-all ease-in-out hover:scale-110"
+        >
           <Image
-            src="/images/assets/actions-device-desktop.svg"
+            src="/images/assets/maps-and-flags-green.png"
             alt={imgAlt}
             width="50"
             height="50"
+            className="hover:animate-pulse"
           />
-          website
+          Map
         </Link>
       </div>
     </div>

@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+main,
+.background-burger {
+  background-color: rgba(0, 0, 0, 0.68);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../public/images/assets/burger.png);
+  background-blend-mode: color-dodge;
+}
+
+@media screen and (max-width: 400px) {
+}
+main,
+.background-burger {
+  background-image: url(../../public/images/assets/bg-hamburger.png);
+}

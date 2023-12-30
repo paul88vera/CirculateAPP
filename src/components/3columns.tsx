@@ -18,8 +18,8 @@ const TripleColumns = () => {
   } else {
     return (
       <>
-        <section className="max-w-screen relative flex flex-col px-4 pb-16 text-green-900 md:px-10">
-          <div className="pt-8 text-center text-xl uppercase tracking-widest md:text-2xl lg:text-3xl xl:text-4xl">
+        <section className="max-w-screen relative flex flex-col px-4 pb-16 md:px-10">
+          <div className="pt-8 text-center text-xl uppercase tracking-widest text-white md:text-2xl lg:text-3xl xl:text-4xl">
             Welcome to our growing database of restaurants and cuisines in San
             Antonio, Texas!
           </div>
@@ -27,7 +27,7 @@ const TripleColumns = () => {
             Find Food in San Antonio, Texas
           </div> */}
           {/* This is the filtering portion of the page */}
-          <div className="flex justify-center gap-2 py-4 text-center">
+          <div className="flex justify-center gap-2 py-4 text-center text-white">
             <label htmlFor="Filter">
               Search Name or Type:{" "}
               <input
