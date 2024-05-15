@@ -1,7 +1,7 @@
 # Circulate
 
 This is a restaurant finder site that will allow you to view a select variety of restaurants within San Antonio, Texas. This is NOT a full database of restaurants but might be later on. The idea behind it was to make finding a restaurant by name or type easier for the user within SATX.<br/>
-[View The Circulate Here](https://circulate-app.vercel.app)
+[View Circulate Here](https://circulate-app.vercel.app)
 
 ## Current Features
 - `Authenicated` login using Clerk
