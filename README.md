@@ -1,28 +1,31 @@
-# Create T3 App
+# Circulate
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a restaurant finder site that will allow you to view a select variety of restaurants within San Antonio, Texas. This is NOT a full database of restaurants but might be later on. The idea behind it was to make finding a restaurant by name or type easier for the user within SATX.
 
-## What's next? How do I make an app with this?
+## Current Features
+- `Authenicated` login using Clerk
+- `Filter by name` of restaurant
+- `Filter by type` of cuisine
+- Resaurant Short `Bio`
+- Resaurant Location Information (`Website`, `Phone`, `Google Map Location`)
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## New Features On The Way
+- Ratings for each restaurant
+- Save favorite restaurants
+- Updated Search filter dynamics
+- More restaurants within database
+- ADMIN can add new restaurants when logged in
+- Design Update
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Technologies Used:
+- T3Stack (Next.js)
+- Typescript
+- tRPC
+- Prisma
+- TailwindCSS
+- Clerk
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Support
+email: paul88vera@gmail.com
 
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+email: support@verafied.tech
